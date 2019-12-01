@@ -5,8 +5,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: 'Anton';
+	src: url('file:///home/atkn/Masaüstü/aBollukmun/fonts/Anton-Regular.ttf');
+	font-weight: normal;
+    font-style: normal;
+}
 html, body {
-	width: 100%;
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -15,6 +20,7 @@ html, body {
 	min-height: 100%;
 	height: 100%;
 	padding-bottom: 0;
+	position: relative;
 }
 #Footer{
 	position: absolute;
@@ -23,37 +29,55 @@ html, body {
 	width: 100%;
 	bottom: -200px; /* HEader height*/
 }
+#Navbar{
+	display: inline-block;
+}
 #logo{
-	position: absolute;
+	position: relative;
+	padding-left: 15px;
 	width: 204px;
 	height: 204px;
-	overflow: hidden;
 }
 .NavbarWideMenues{
 	list-style-type: none;
 	display: inline;
-	float: right;
-	padding-top:70px;
-	padding-right: 30px;
-	position: relative;
-}
-.NavbarWideMenues ul,li{
-	list-style-type: none;
-	display: inline;
-	float: right;
-	padding-right: 30px;
-	position: relative;
+	top: 0;
+	right: 0;
+	position: absolute;
 }
 .NavbarWideMenues a{
 	text-decoration: none;
 	color: black;
+	display: inline-block;
 	text-align: center;
 	font-size : 24px;
 	font-family: 'permanent_markerregular';
+	list-style-type: none;
+	display: inline-block;
+	float: right;
+	padding-right: 30px;
+	padding: 70px 30px;
+	position: relative;
+}
+.NavbarWideMenues a:hover{
+	transform: rotate(5deg) scale(1.5);
+	transition: transform 0.1s;
 }
 .ApplyContainer ul,li{
 	color: white;
 	list-style-type: initial;
 	display: table;
 	float: left;
+}
+#Content{
+	clear: both;
+}
+.ContentTitle{
+	color: white;
+	text-align: center;
+	background: black;
+	font-size: 140px;
+	text-shadow: 20px 0px #333333;
+	font-style: italic;
+	font-family: 'Anton';
 }
