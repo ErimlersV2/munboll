@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'permanent_markerregular';
+    src: url('file:///home/atkn/Masaüstü/aBollukmun/fonts/permanentmarker-regular-webfont.woff2') format('woff2'),
+         url('file:///home/atkn/Masaüstü/aBollukmun/fonts/permanentmarker-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+#MainContainer {
+	min-height: 100%;
+	height: 100%;
+	padding-bottom: 0;
+}
+#Footer{
+	position: absolute;
+	background-color: black;
+	height: 200px;
+	width: 100%;
+	bottom: -200px; /* HEader height*/
+}
+#logo{
+	position: absolute;
+	width: 204px;
+	height: 204px;
+	overflow: hidden;
+}
+.NavbarWideMenues{
+	list-style-type: none;
+	display: inline;
+	float: right;
+	padding-top:70px;
+	padding-right: 30px;
+	position: relative;
+}
+.NavbarWideMenues ul,li{
+	list-style-type: none;
+	display: inline;
+	float: right;
+	padding-right: 30px;
+	position: relative;
+}
+.NavbarWideMenues a{
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	font-size : 24px;
+	font-family: 'permanent_markerregular';
+}
+.ApplyContainer ul,li{
+	color: white;
+	list-style-type: initial;
+	display: table;
+	float: left;
+}
