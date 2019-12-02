@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'permanent_markerregular';
-    src: url('file:///home/atkn/Masaüstü/aBollukmun/fonts/permanentmarker-regular-webfont.woff2') format('woff2'),
-         url('file:///home/atkn/Masaüstü/aBollukmun/fonts/permanentmarker-regular-webfont.woff') format('woff');
+    src: url('https://bytescreator.github.io/parabolherifler/fonts/permanentmarker-regular-webfont.woff2') format('woff2'),
+         url('https://bytescreator.github.io/parabolherifler/fonts/permanentmarker-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family: 'Anton';
-	src: url('file:///home/atkn/Masaüstü/aBollukmun/fonts/Anton-Regular.ttf');
+	src: url('https://bytescreator.github.io/parabolherifler/fonts/Anton-Regular.ttf');
 	font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family: 'QuickSand';
-	src: url('file:///home/atkn/Masaüstü/aBollukmun/fonts/Quicksand-Regular.ttf');
+	src: url('https://bytescreator.github.io/parabolherifler/fonts/Quicksand-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
