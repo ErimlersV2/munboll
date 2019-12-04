@@ -21,6 +21,7 @@ html, body {
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
+	min-width: 430px;
 }
 #MainContainer {
 	min-height: 100%;
@@ -70,6 +71,56 @@ html, body {
 	transform: rotate(5deg) scale(1.5);
 	transition: transform 0.1s;
 }
+.NarrowMenuesButton a{
+	z-index: 2;
+	visibility: hidden;
+	right: 0;
+	top: 0;
+	position: fixed;
+	color: black;
+	font-size: 100px;
+	font-family: "permanent_markerregular";
+}
+.NavbarNarrowMenues {
+	top: 0;
+	z-index: 1;
+	height: 100%;
+	position: fixed;
+	right: 0;
+	transition: width 0.2;
+	width: 40%;
+	visibility: hidden;
+	background: #000000;
+	transition: width 0.2s;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.NavbarNarrowMenues div{
+	width: 100%;
+	text-align: center;
+	font-family: "permanent_markerregular";
+	padding-top: 35px;
+}
+.NavbarNarrowMenues a{
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	height: 100%;
+	font-size: 35px;
+	text-shadow: 5px 0px #333333;
+}
+.NavbarNarrowMenues div:hover{
+	transform: rotate(5deg) scale(1.5);
+	transition: transform 0.1s;
+}
+#narrowicon{
+	filter: invert(100%);
+	width: 150px;
+	height: 150px;
+}
+#narrowicon:hover {
+	transform: none;
+}
 .ApplyContainer ul,li{
 	color: white;
 	list-style-type: initial;
@@ -97,4 +148,19 @@ html, body {
 	padding-top: 50px;
 	font-family: QuickSand;
 	font-size: 15pt;
+}
+
+@media only screen and (max-width: 1144px){
+	.NavbarWideMenues {
+		visibility: hidden;
+	}
+	/*.NavbarNarrowMenues {
+		visibility: visible;
+	}*/
+	.NarrowMenuesButton a{
+		visibility: visible;
+	}
+	.ContentTextDiv{
+		font-size: 25pt;
+	}
 }
