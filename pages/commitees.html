@@ -2,6 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/css/default.css">
+	<script type="text/javascript" src="/js/default.js" ></script>
 	<title>MUNBOLL</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
 <a href="/pages/faq.html">FAQ</a>
 <a href="/pages/contact.html">Contact</a>
 </div>
-<div class="NarrowMenuesButton"><a id="NarrowButton" onclick="t=function (){ if(document.getElementById('smallMenues').style.visibility == 'hidden'){document.getElementById('smallMenues').style.visibility='visible';document.getElementById('smallMenues').style.width='40%';document.getElementById('NarrowButton').style.color='white';}else{document.getElementById('smallMenues').style.visibility='hidden';document.getElementById('smallMenues').style.width='0%';document.getElementById('NarrowButton').style.color='black';}};t()">≡</a></div>
+<div class="NarrowMenuesButton"><a id="NarrowButton" onclick="NarrowNavbarDrawerOpener()">≡</a></div>
 <div class="NavbarNarrowMenues" id="smallMenues" style="visibility: hidden; width: 0%;">
 <div><img id="narrowicon" src="/img/logo.jpg"></div>
 <div><a href="/index.html">Home</a></div>
@@ -31,6 +32,7 @@
 <div><a href="/pages/contact.html">Contact</a></div>
 <div><a href="https://instagram.com/munboll20"><img src="https://instagram.com/favicon.ico"></a></div>
 </div>
+<div class="NavbarNarrowMenuesDrawer" onclick="NarrowNavbarDrawerOpener()" id="DrawerFiller"></div>
 </div>
 <div id="Content">
 <div class="ContentTitle">Commitees</div>

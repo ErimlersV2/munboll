@@ -2,6 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/css/default.css">
+	<script type="text/javascript" src="/js/default.js" ></script>
 	<title>MUNBOLL</title>
 </head>
 <body>
@@ -19,9 +20,9 @@
 <a href="/pages/faq.html">FAQ</a>
 <a href="/pages/contact.html">Contact</a>
 </div>
-<div class="NarrowMenuesButton"><a id="NarrowButton" onclick="t=function (){ if(document.getElementById('smallMenues').style.visibility == 'hidden'){document.getElementById('smallMenues').style.visibility='visible';document.getElementById('smallMenues').style.width='40%';document.getElementById('NarrowButton').style.color='white';}else{document.getElementById('smallMenues').style.visibility='hidden';document.getElementById('smallMenues').style.width='0%';document.getElementById('NarrowButton').style.color='black';}};t()">≡</a></div>
+<div class="NarrowMenuesButton"><a id="NarrowButton" onclick="NarrowNavbarDrawerOpener()">≡</a></div>
 <div class="NavbarNarrowMenues" id="smallMenues" style="visibility: hidden; width: 0%;">
-<div><img id="narrowicon" src="img/logo.jpg"></div>
+<div><img id="narrowicon" src="/img/logo.jpg"></div>
 <div><a href="/index.html">Home</a></div>
 <div><a href="/pages/apply.html">Apply</a></div>
 <div><a href="/pages/commitees.html">Commitees</a></div>
@@ -31,9 +32,16 @@
 <div><a href="/pages/contact.html">Contact</a></div>
 <div><a href="https://instagram.com/munboll20"><img src="https://instagram.com/favicon.ico"></a></div>
 </div>
+<div class="NavbarNarrowMenuesDrawer" onclick="NarrowNavbarDrawerOpener()" id="DrawerFiller"></div>
 </div>
 <div id="Content">
-
+	<div style="display: inline-block;width: 100%;height: 100%;">
+	<div class="SmallerContentTitle" style="display: inline-block;position: absolute;float: left;margin: auto;width: 60%;text-align: center;padding-top: 100px;font-size: 150px;z-index: 1">
+		Under Construction
+	</div>
+	<div style="background: url('https://lh3.googleusercontent.com/dMMK8qRuQAkVweVr_l0NKF5hbDUgMf5fli_AZpzYBVSrKCkz-9oMzkmqCHPlHsmyeylkWNB4Pgg9BQjc_9Sv=w959-h541'); width:500px;height: 500px; background-repeat: no-repeat;display: inline-block;position: relative;float: right;"></div>
+	</div>
+</div>
 </div>
 <div id="Footer">
 <div id="FooterContainer">
