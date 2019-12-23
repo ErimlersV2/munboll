@@ -24,11 +24,30 @@
   src: local('Aldrich Regular'), local('Aldrich-Regular'), url(https://fonts.gstatic.com/s/aldrich/v10/MCoTzAn-1s3IGyJMVacY3w.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(https://fonts.gstatic.com/s/librefranklin/v4/jizDREVItHgc8qDIbSTKq4XkRiUR2zcLig.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Franklin'), local('LibreFranklin-Regular'), url(https://fonts.gstatic.com/s/librefranklin/v4/jizDREVItHgc8qDIbSTKq4XkRiUf2zc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html, body {
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
 	min-width: 430px;
+	width: 100%;
+	overflow-x: hidden;
 }
 #MainContainer {
 	min-height: 100%;
@@ -43,6 +62,7 @@ html, body {
 	height: 230px;
 	width: 100%;
 	bottom: -230px; /* HEader height*/
+	min-width: 430px;
 }
 #FooterContainer {
 	width: 90%;
@@ -209,7 +229,49 @@ html, body {
 	-o-user-select: none;
 	cursor: pointer;
 }
-@media only screen and (max-width: 1144px){
+.LetterSection{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Libre Franklin";
+	position: relative;
+	clear: both;
+	height: 1025px;
+}
+.ApplySection{
+	width: 90%;
+	height: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	clear: both;
+	font-family: Anton;
+	font-size: 72px;
+}
+@media only screen and (max-width: 1589px){
+	.ApplySection{
+		font-size: 48px;
+	}
+}
+#DelegateApplication{
+	left:0 ;
+	position: absolute;
+	text-align: center;
+}
+#DelegationApplication {
+	right: 0;
+	position: absolute;
+	text-align: center;
+}
+#WelcomeLetter p{
+	font-size: 24px;
+}
+.MapSection{
+	width: 100%;
+	clear:both;
+	padding-top: 200px;
+}
+@media only screen and (max-width: 1332px){
 	.NavbarWideMenues {
 		visibility: hidden;
 	}
@@ -221,5 +283,25 @@ html, body {
 	}
 	.ContentTextDiv{
 		font-size: 25pt;
+	}
+	#DelegateApplication{
+		position: static;
+	}
+	#DelegationApplication{
+		position: static;
+	}
+	.ApplySection{
+		position: relative;
+		padding-bottom: 50px;
+		height: 700px;
+	}
+	.LetterSection{
+		position: static;
+	}
+	#WelcomeLetter p{
+	font-size: 19px;
+	}
+	.MapSection{
+		padding-top: -100px
 	}
 }
