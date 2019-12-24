@@ -46,6 +46,7 @@ html, body {
 	padding: 0px;
 	margin: 0px;
 	min-width: 430px;
+	min-height: 100%;
 	width: 100%;
 	overflow-x: hidden;
 }
@@ -57,11 +58,11 @@ html, body {
 	position: relative;
 }
 #Footer{
-	position: relative;
+	position: static;
 	background-color: black;
 	height: 230px;
 	width: 100%;
-	bottom: -230px; /* HEader height*/
+	bottom: 0; /* HEader height*/
 	min-width: 430px;
 }
 #FooterContainer {
@@ -181,7 +182,7 @@ html, body {
 	box-shadow: 0px 40px 59px -15px rgba(0,0,0,1);
 	color: white;
 	text-align: center;
-	background: black;
+	background-color: black;
 	font-size: 140px;
 	text-shadow: 20px 0px #333333;
 	font-style: italic;
@@ -194,6 +195,10 @@ html, body {
 	overflow-x: hidden;
 	cursor: pointer;
 }
+.ContentTitle label{
+	position: relative;
+	top: 50px;
+}
 .ContentTextDiv{
 	color: black;
 	width: 90%;
@@ -201,12 +206,9 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	font-family: QuickSand;
-	font-size: 15px;
+	font-size: 25px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	transform: scaleY(0);
-	transition: transform 0.4s;
-	visibility: hidden;
 	user-select: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
