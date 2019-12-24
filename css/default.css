@@ -64,6 +64,7 @@ html, body {
 	width: 100%;
 	bottom: 0; /* HEader height*/
 	min-width: 430px;
+	clear:both;
 }
 #FooterContainer {
 	width: 90%;
@@ -218,6 +219,7 @@ html, body {
 .SmallerContentTitle {
 	color: black;
 	text-align: left;
+	padding-top: 15px;
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
@@ -250,6 +252,42 @@ html, body {
 	font-family: Anton;
 	font-size: 72px;
 }
+.CommitteeSection{
+	padding-bottom: 200px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-color: #5b92e5;
+	overflow-x: hidden;
+}
+.CommitteeText{
+	padding-bottom: 200px;
+	display: inline-block;
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 25px 20px rgba(38,78,138,0.75);
+	-moz-box-shadow: 0px 0px 25px 20px rgba(38,78,138,0.75);
+	box-shadow: 0px 0px 25px 20px rgba(38,78,138,0.75);
+	top: 10%;
+	font-family: QuickSand;
+	font-size: 38px;
+	float: left;
+	text-align: left;
+	background-color: white;
+}
+.CommitteeImage{
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	padding: 25px;
+	float: right;
+	overflow: none;
+	text-shadow: 2px 2px #000000;
+}
+
 @media only screen and (max-width: 1589px){
 	.ApplySection{
 		font-size: 48px;
