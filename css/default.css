@@ -216,6 +216,9 @@ html, body {
 	-webkit-user-select: none;
 	-o-user-select: none;
 }
+#Content{
+	min-height: 100%;
+}
 .SmallerContentTitle {
 	color: black;
 	text-align: left;
@@ -255,11 +258,20 @@ html, body {
 .CommitteeSection{
 	padding-bottom: 200px;
 	width: 100%;
+	float: left;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 	background-color: #5b92e5;
-	overflow-x: hidden;
+	overflow: hidden;
+	display: block;
+	clear: both;
+}
+.CommitteeSection:after{
+	content: " ";
+	display: block;
+	clear: both;
+	position: static;
 }
 .CommitteeText{
 	padding-bottom: 200px;
@@ -277,15 +289,17 @@ html, body {
 	float: left;
 	text-align: left;
 	background-color: white;
+	clear: both;
 }
 .CommitteeImage{
 	width: 30%;
-	height: 100%;
+	height: auto;
 	display: inline-block;
 	padding: 25px;
 	float: right;
 	overflow: none;
 	text-shadow: 2px 2px #000000;
+	clear: both;
 }
 
 @media only screen and (max-width: 1589px){
