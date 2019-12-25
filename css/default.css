@@ -58,7 +58,7 @@ html, body {
 	position: relative;
 }
 #Footer{
-	position: static;
+	position: relative;
 	background-color: black;
 	height: 230px;
 	width: 100%;
@@ -113,8 +113,13 @@ html, body {
 	top: 0;
 	position: fixed;
 	color: black;
+	padding-right: 15px;
 	font-size: 100px;
 	font-family: "permanent_markerregular";
+	transition: color 0.4s;
+}
+.NarrowMenuesButton a:hover{
+	color:  #5b92e5;
 }
 .NavbarNarrowMenues {
 	top: 0;
@@ -324,6 +329,31 @@ html, body {
 	width: 100%;
 	clear:both;
 	padding-top: 200px;
+}
+.ScheduleSection{
+	width: 90%;
+	padding-top:50px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: QuickSand;
+	font-size: 28px;
+	text-align: center;
+	position: relative;
+}
+.ScheduleSection h1{
+	font-family: Anton;
+	font-size: 41px;
+}
+.ScheduleSection h2{
+	display: inline-block;
+	left:0;
+	font-family: Aldrich;
+	font-size: 21px;
+	color: blue;
+}
+.ScheduleSection h3{
+	display: inline-block;
+	right: 0;
 }
 @media only screen and (max-width: 1332px){
 	.NavbarWideMenues {

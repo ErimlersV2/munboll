@@ -24,7 +24,7 @@ function NarrowNavbarDrawerOpener()
 	}
 	else{
 		document.getElementById('smallMenues').style.visibility='hidden';
-		document.getElementById('smallMenues').style.width='0%';document.getElementById('NarrowButton').style.color='black';
+		document.getElementById('smallMenues').style.width='0%';document.getElementById('NarrowButton').style.color='';
 		document.getElementById('DrawerFiller').style.display="none";
 	}
 }
