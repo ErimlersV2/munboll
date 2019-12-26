@@ -339,23 +339,27 @@ html, body {
 	margin-right: auto;
 	margin-left: auto;
 	font-family: QuickSand;
-	font-size: 28px;
+	font-size: 21px;
 	text-align: center;
 	position: relative;
 }
 .ScheduleSection h1{
 	font-family: Anton;
-	font-size: 41px;
+	font-size: 71px;
+}
+.ScheduleSection td{
+	padding-right: 45px;
 }
 .ScheduleSection h2{
 	display: inline-block;
 	left:0;
 	font-family: Aldrich;
-	font-size: 21px;
+	font-size: 61px;
 	color: blue;
 }
 .ScheduleSection h3{
 	display: inline-block;
+	font-size: 41px;
 	right: 0;
 }
 @media only screen and (max-width: 1332px){
