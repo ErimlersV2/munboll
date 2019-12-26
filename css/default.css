@@ -345,21 +345,21 @@ html, body {
 }
 .ScheduleSection h1{
 	font-family: Anton;
-	font-size: 71px;
+	font-size: 41px;
 }
 .ScheduleSection td{
-	padding-right: 45px;
+	padding-right: 100px;
 }
 .ScheduleSection h2{
 	display: inline-block;
 	left:0;
 	font-family: Aldrich;
-	font-size: 61px;
+	font-size: 31px;
 	color: blue;
 }
 .ScheduleSection h3{
 	display: inline-block;
-	font-size: 41px;
+	font-size: 21px;
 	right: 0;
 }
 @media only screen and (max-width: 1332px){
@@ -394,5 +394,14 @@ html, body {
 	}
 	.MapSection{
 		padding-top: -100px
+	}
+	.ScheduleSection h1{
+		font-size: 71px;
+	}
+	.ScheduleSection h2{
+		font-size: 61px;
+	}
+	.ScheduleSection h3{
+		font-size: 41px;
 	}
 }
