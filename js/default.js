@@ -28,3 +28,8 @@ function NarrowNavbarDrawerOpener()
 		document.getElementById('DrawerFiller').style.display="none";
 	}
 }
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155056480-1');
