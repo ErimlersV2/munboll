@@ -3,9 +3,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/css/default.css">
 	<script type="text/javascript" src="/js/default.js" ></script>
+	<script type="text/javascript" src="/js/LetterHeightFixer.js"></script>
 	<title>MUNBOLL</title>
 </head>
-<body>
+<body onresize="FixHeight();">
 <div id="MainContainer">
 <div id="Navbar">
 <div>
@@ -49,7 +50,7 @@
 <p><font size="6pt" style="font-style: bold;">Secretary General</font></p>
 <p><font size="7pt" style="font-style: bold;">Gökçen Kazar</font></p>
 </div>
-<div style="width: 50%;height: inherit;display: inline-block;float: right;position: absolute"><img style="height: inherit;" src="/img/logo.jpg"></div>
+<div style="width: 30%;display: inline-block;float: right;position: absolute"><img id="munbollImg" src="/img/logo.jpg"></div>
 </div>
 <div class="ApplySection">
 <center><p>Apply</p></center>
