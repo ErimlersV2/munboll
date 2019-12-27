@@ -28,6 +28,13 @@ function NarrowNavbarDrawerOpener()
 		document.getElementById('DrawerFiller').style.display="none";
 	}
 }
+function GeneralHeightFixer(){
+	if(document.getElementById("Content") < window.innerHeight-434){
+		document.getElementById("Content") = window.innerHeight-434
+	}
+}
+window.onload = GeneralHeightFixer;
+window.onresize= GeneralHeightFixer;
 window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
