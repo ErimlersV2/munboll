@@ -185,6 +185,10 @@ html, body {
 	font-family: "QuickSand";
 	font-size: 17px;
 }
+.ApplyContainer a{
+	text-decoration: none;
+	color: white;
+}
 .ContentTitle{
 	-webkit-box-shadow: 0px 40px 59px -15px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 40px 59px -15px rgba(0,0,0,1);
@@ -362,6 +366,15 @@ html, body {
 	font-size: 21px;
 	right: 0;
 }
+.WideSocialMedia {
+	display: inline-block;
+	float: left;
+	padding-left: 100px;
+	color: white;
+	font-family: QuickSand;
+	font-size:17px;
+	padding-top: 10px;
+}
 @media only screen and (max-width: 1332px){
 	.NavbarWideMenues {
 		visibility: hidden;
@@ -403,5 +416,8 @@ html, body {
 	}
 	.ScheduleSection h3{
 		font-size: 41px;
+	}
+	.WideSocialMedia{
+		display: none;
 	}
 }
