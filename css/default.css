@@ -222,6 +222,7 @@ html, body {
 	font-size: 25px;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	transition: transform 0.3s;
 	user-select: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
