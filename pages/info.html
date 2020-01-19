@@ -2,8 +2,23 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/css/info.css">
 	<script type="text/javascript" src="/js/default.js" ></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155056480-1"></script>
+	<script>
+		function CalculateEarlyLeft(){
+			p=document.getElementById("dayReminder")
+			x=new Date();
+			if (Math.round((1580083199000-x.getTime())/(3600*24*1000)) > 0.5)
+			{
+				p.innerHTML =Math.round((1580083199000-x.getTime())/(3600*24*1000))+" Days Left.";
+			}
+			else{
+				p.innerHTML = "Early Application Expired.";
+			}
+		}
+		window.addEventListener("load",CalculateEarlyLeft);
+	</script>
 	<title>MUNBOLL</title>
 </head>
 <body>
@@ -42,33 +57,54 @@
 <div style="width: 80%;margin: auto;padding-top: 100px">
 	<div style="background-color: white;">
 	<div class="SmallerContentTitle" style="padding: 50px;padding-bottom: 0px;">What is Model United Nations or MUN?</div>
-	<div class="ContentTextDiv" style="padding: 15px 50px;">
+	<div class="ContentTextDiv" >
 	<p>Model United Nations, also known as Model UN or MUN, is an extra-curricular activity in which students typically roleplay delegates to the United Nations and simulate UN committees. This activity takes place at MUN conferecences, which is usually organized by a high school or an universities MUN club.</p>
 <p>So we will organize a MUN in our school as Gülser Mehmet Bolluk Anatolian Highschool. Our goal is also to ensure that our delegates improve their English skills in a <u>safe environment.</u> Our team members are capable, also our executive members are very talented and professionals in their mission. We have six committees, more detail at <a href="/pages/commitees.html">here</a>, and we’d be honored to see you at munboll’20.</p>
-	<div style="text-align: center;font-family: Aldrich;text-shadow: 2px 2px #333;font-size: 41px;padding-top: 25px;">120 Delegate Capacity</div>
-	<table class="SmallerContentTitle" style="padding-bottom: 25px">
-	<tr><td>
-	<table class="ContentTextDiv">
-		<tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">4</td><td>IT</td></tr>
-		<tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">15</td><td>Admin</td></tr>
-		<tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">5</td><td>PR</td></tr>
-		<tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">2</td><td>Logistic</td></tr>
-		<tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">3</td><td>Finance</td></tr>
-		<tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">11</td><td>Press</td></tr>
-		<tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">5</td><td>Entertainment</td></tr>
-		<tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">4</td><td>Executive</td></tr>
-	</table></td>
-	<td><table class="ContentTextDiv"><tr><td style="font-size: 41px;font-family: Aldrich;text-shadow: 2px 2px #333333;">45</td><td>Organization Members Total</td></tr></table></td>
-	</tr>
-	</table>
 	</div>
-	<div class="SmallerContentTitle" style="padding: 15 50px;">
-	Application Fees</div>
-	<div class="ContentTextDiv" style="padding: 15px 50px;">
+	<table style="width: 100%;">
+	<tr><td><div class="SmallerContentTitle" >
+	Early Application Fees</div></td>
+	<td><div class="ContentTextDiv" style="text-align: right;font-size: 15px;" id="dayReminder"></div></td>
+	</table>
+	<div class="ContentTextDiv">
 		<p>90 ₺ for Individual Delegate Application</p>
 		<p>85 ₺ for Delegation Application</p>
 	</div>
-
+	<div class="ContentTextDiv" style="margin-right: auto;margin-left: auto;text-align: center;text-shadow: 2px 2px #333;font-family: Aldrich;">120 Deletage Capacity</div>
+	<div class="SmallerContentTitle" >
+		<p>Our Organization Team</p>
+	</div>
+	<div class="ContentTextDiv" style="text-align: center;">
+		<div style="position: relative; background-color: black;width: 100%;">
+		<table style="margin-left: auto;margin-right: auto;">
+		<tr>
+			<td><div><img style="width: 35vw;" src="/img/heads/gozdebarak.jpg"></div></td>
+			<td><div><img style="width: 35vw;" src="/img/heads/hurremcetin.jpg"></div></td>
+		</tr>
+		<tr>
+			<td><div><img style="width: 35vw;" src="/img/heads/idriskaan.jpg"></div></td>
+			<td><div><img style="width: 35vw;" src="/img/heads/gozdebarak.jpg"></div></td>
+		</tr>
+		</table>
+		</div>
+		<div>&nbsp;</div>
+		<table class="TeamsTable">
+			<center>
+			<tr>
+				<td id="prtd"><div id="pr">&nbsp;</div><p>5</p><p>PR</p></td>
+				<td id="logtd"><div id="log">&nbsp;</div><p>2</p><p>Logistic</p></td>
+			</tr>
+			<tr>
+				<td id="fintd"><div id="fin">&nbsp;</div><p>3</p><p>Finance</p></td>
+				<td id="presstd"><div id="press">&nbsp;</div><p>11</p><p>Press</p></td>
+			</tr>
+			<tr>
+				<td id="entertd"><div id="enter">&nbsp;</div><p>5</p><p>Entertainment</p></td>
+				<td id="admintd"><div id="admin">&nbsp;</div><p>15</p><p>Admin</p></td>
+			</tr>
+		</center>
+		</table>
+	</div>
 </div>
 </div>
 <div id="Footer">

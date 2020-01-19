@@ -36,7 +36,6 @@ function GeneralHeightFixer(){
 window.onload = GeneralHeightFixer;
 window.onresize= GeneralHeightFixer;
 window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-155056480-1');
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-155056480-1');
