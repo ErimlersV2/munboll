@@ -50,17 +50,17 @@ body,html {
 .TeamsTable p{
 	z-index: 3;
 	display: block;
-	opacity: 0%;
+	opacity: 0;
 	transition: opacity 1s;
 }
 .TeamsTable td:hover div{
 	width: 35vw;
 	height: 35vw;
 	filter: blur(10px);
-	opacity: 50%;
+	opacity: 0.5;
 }
 .TeamsTable td:hover p {
-	opacity: 99.9%;
+	opacity: 0.99;
 }
 #pr{
 	background: url('/img/heads/egesucan.jpg');
