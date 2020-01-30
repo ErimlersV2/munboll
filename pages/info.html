@@ -9,15 +9,18 @@
 		function CalculateEarlyLeft(){
 			p=document.getElementById("dayReminder")
 			x=new Date();
-			if (Math.round((1580083199000-x.getTime())/(3600*24*1000)) > 0.5)
+			if (Math.round((1580547600000-x.getTime())/(3600*24*1000)) > 0.5)
 			{
-				p.innerHTML =Math.round((1580083199000-x.getTime())/(3600*24*1000))+" Days Left.";
+				p.innerHTML =Math.round((1580547600000-x.getTime())/(3600*24*1000))+" Days Left.";
 			}
 			else{
 				p.innerHTML = "Early Application Expired.";
+				document.getElementById("ApplicationTitle").innerHTML = "Application Fees";
+				document.getElementById("delegateApplicationFee").innerHTML = "100 ₺ for Individual Delegate Application";
+				document.getElementById("delegationApplicationFee").innerHTML = "95 ₺ for Delegation Application";
 			}
 		}
-		//window.addEventListener("load",CalculateEarlyLeft);
+		window.addEventListener("load",CalculateEarlyLeft);
 	</script>
 	<title>MUNBOLL</title>
 </head>
@@ -62,13 +65,13 @@
 <p>So we will organize a MUN in our school as Gülser Mehmet Bolluk Anatolian Highschool. Our goal is also to ensure that our delegates improve their English skills in a <u>safe environment.</u> Our team members are capable, also our executive members are very talented and professionals in their mission. We have six committees, more detail at <a href="/pages/commitees.html">here</a>, and we’d be honored to see you at munboll’20.</p>
 	</div>
 	<table style="width: 100%;">
-	<tr><td><div class="SmallerContentTitle" >
+	<tr><td><div class="SmallerContentTitle" id="ApplicationTitle">
 	Early Application Fees</div></td>
 	<td><div class="ContentTextDiv" style="text-align: right;font-size: 15px;" id="dayReminder"></div></td>
 	</table>
 	<div class="ContentTextDiv">
-		<p>90 ₺ for Individual Delegate Application</p>
-		<p>85 ₺ for Delegation Application</p>
+		<p id="delegateApplicationFee">90 ₺ for Individual Delegate Application</p>
+		<p id="delegationApplicationFee">85 ₺ for Delegation Application</p>
 	</div>
 	<div class="ContentTextDiv" style="margin-right: auto;margin-left: auto;text-align: center;text-shadow: 2px 2px #333;font-family: Aldrich;">120 Deletage Capacity</div>
 	<div class="SmallerContentTitle" >
