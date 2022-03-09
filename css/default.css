@@ -67,7 +67,6 @@ html, body {
 	padding-bottom: 0;
 	padding: 0;
 	position: relative;
-	overflow-y: hidden;
 }
 #Footer{
 	position: relative;
@@ -387,47 +386,6 @@ html, body {
 	font-family: QuickSand;
 	font-size:17px;
 	padding-top: 10px;
-}
-.CancellationsOuter{
-	display: block;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 100;
-	overflow-y: scroll;
-}
-.CancellationsInner{
-	font-family: "Libre Franklin";
-	text-align: center;
-	background-color: white;
-	position: absolute;
-	top: 15%;
-	bottom: 15%;
-	left: 15%;
-	right: 15%;
-	min-width: 660px;
-	min-height: 660px;
-	z-index: 100;
-	-webkit-box-shadow: 9px 13px 68px 25px rgba(0,0,0,0.48);
-	-moz-box-shadow: 9px 13px 68px 25px rgba(0,0,0,0.48);
-	box-shadow: 9px 13px 68px 25px rgba(0,0,0,0.48);
-}
-.CancellationsText{
-	font-family: "Libre Franklin";
-	font-size: 20px;
-	text-align: center;
-	background-color: white;
-	position: absolute;
-	top:5%;
-	bottom: 5%;
-	left: 5%;
-	right: 5%;
-	z-index: 100;
-}
-#MainContainer{
-	filter: blur(30px);
 }
 @media only screen and (max-width: 1332px){
 	.NavbarWideMenues {
