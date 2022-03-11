@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'permanent_markerregular';
-    src: url('https://munboll.org/fonts/PermanentMarker-Regular.ttf');
+    src: url('https://munboll.ml/fonts/PermanentMarker-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family: 'Anton';
-	src: url('https://munboll.org/fonts/Anton-Regular.ttf');
+	src: url('https://munboll.ml/fonts/Anton-Regular.ttf');
 	font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family: 'QuickSand';
-	src: url('https://munboll.org/fonts/Quicksand-Regular.ttf');
+	src: url('https://munboll.ml/fonts/Quicksand-Regular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,14 +26,14 @@
 @font-face{
 	font-family: 'Nexa_Bold';
 	font-style: normal;
-	src: url('https://munboll.org/fonts/nexa-bold.otf') format('opentype');
+	src: url('https://munboll.ml/fonts/nexa-bold.otf') format('opentype');
 	font-weight: normal;
 }
 @font-face{
 	font-family: 'Nexa Light';
 	font-style: normal;
 	font-weight: normal;
-	src: url('https://munboll.org/fonts/nexa-light.otf') format('opentype');
+	src: url('https://munboll.ml/fonts/nexa-light.otf') format('opentype');
 }
 /* latin-ext */
 @font-face {
